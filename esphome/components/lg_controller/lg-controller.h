@@ -130,7 +130,7 @@ constexpr int8_t TempConversion::LGCelToCelAdjustment[];
 
 class LgController final : public climate::Climate, public uart::UARTDevice, public Component {
     static constexpr size_t MsgLen = 13;
-    static constexpr int RxPin = 26; // Keep in sync with rx_pin in base.yaml.
+    static constexpr int RxPin = 20; // Keep in sync with rx_pin in base.yaml.
 
     climate::ClimateTraits supported_traits_{};
 
